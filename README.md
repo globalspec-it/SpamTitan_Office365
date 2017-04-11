@@ -8,7 +8,7 @@ from Office 365 and export to CSV.  Then we will read the file and using the Spa
 domains in SpamTitan.
 
 This script accounts for multiple domains in both locations and saves a log file with import metrics and a detailed log of any failures. 
-It will then email the log to your destination of choice.
+It will then email the log to your destination of choice if there is an error.
 
 Configuration:
 
