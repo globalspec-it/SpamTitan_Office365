@@ -5,25 +5,20 @@ Import-Module MSOnline
 # Edit Variables as Appropriate
 #==============================
 
-$TenantUname = "user@domain.com" 																			# Office 365 User to run the export under
+$TenantUname = "user@domain.com" 																		    # Office 365 User to run the export under
 $LogFileName = "C:\O365_SpamTitan\SpamTitan_RecipientListUpdate_Log.txt"									# Log File Location for Import Details
 $detailLogFileName = "C:\O365_SpamTitan\SpamTitan_Detail_log.txt"											# Log File containing the details of failed imports
 $EmailTempfile = "C:\O365_SpamTitan\O365Emailproxy.csv"														# Declare an intermediate file where you will store the proxy address data
 $O365EmailAddresses = "C:\O365_SpamTItan\O365EmailAddresses.csv"											# Declare a file to store the emails for import to SpamTitan
 $CredentialFile = "C:\O365_SpamTitan\tenantpassword.key"													# Location of Encrypted Credential File
 $SpamTitanServer = "http://spamtitan.domain.com"															# URL to SpamTitan Server
-$EmailFrom "SpamTitanImport@domain.com"																		# Email From Address
-$EmailTo "user@domain.com"																					# Email To Address
-$EmailSubject "SpamTitan Office365 Email Import Failed"														# Email Subject
-$EmailBody "The SpamTitan email address import from Office 365 has failed.  Please see log files attached"	# Email Body
-$SMTPServer smtpserver.domain.com 																			# SMTP Server used to send email
+$EmailFrom = "SpamTitanImport@domain.com"																		# Email From Address
+$EmailTo = "user@domain.com"																					# Email To Address
+$EmailSubject = "SpamTitan Office365 Email Import Failed"														# Email Subject
+$EmailBody = "The SpamTitan email address import from Office 365 has failed.  Please see log files attached"    # Email Body
+$SMTPServer = "smtpserver.domain.com" 																			# SMTP Server used to send email
 
-#===========================================
-# Setup to create a credential file
-# You need to do this on initial configuration and every time your password changes
-# Uncomment it upon first run of script and re-comment it afterwards
-#===========================================
-# Read-Host -Prompt "Mypassword" -AsSecureString | ConvertFrom-SecureString | Out-File $CredentialFile
+
 
 #============================
 # Do Not Edit Below This Line
