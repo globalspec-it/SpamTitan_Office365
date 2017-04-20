@@ -19,7 +19,7 @@ Pre-Requisites:
 So that your account information isn't in plain text, you need to setup a credential file that will be used by the script.
 You need to do this on initial configuration and every time your password changes.
 
-You'll need an account with admin privileges to Office 365 to be able to read all email addresses. Run the following in PowerShell
+You'll need an account with admin privileges to Office 365 to be able to read all email addresses. Run the following in PowerShell as the user you will run your scheduled task under.
 
 Read-Host -Prompt "Mypassword" -AsSecureString | ConvertFrom-SecureString | Out-File c:\O365_SpamTitan\tenantpassword.key
 
